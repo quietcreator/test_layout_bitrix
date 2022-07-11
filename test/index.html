@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script src="./jquery-3.6.0.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <main>
+
+            <div class="block" id="block1">
+                <h2>Для кого подбираете психолога?</h2>
+                <div class="block_radio">
+                    <label>
+                        <input name="psy" type="radio" value="formy">
+                        <span>Для себя</span>
+                    </label>
+                </div>
+                <div class="block_radio">
+                    <label>
+                        <input name="psy" type="radio" value="forchild">
+                        <span>Для ребенка</span>
+                    </label>
+                </div>
+                <div class="block_radio">
+                    <label>
+                        <input name="psy" type="radio" value="forcouple">
+                        <span>Для пары</span>
+                    </label>
+                </div>
+
+                <div class="block_bottom">
+                    <div>
+                        <p>Пройдено: <span>0%</span></p>
+                        <div class="container_skills"><div class="skills proc"></div></div>
+                    </div>
+                    <form>
+                        <p></p>
+                        <button type="button" class="btn_left"><div class="arrow-1"><span></span></div></button>
+                        <button type="button" class="btn_right">Далее&nbsp;&nbsp;&#9658;</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="block hide_class" id="block2">
+                <h2>Что Вас беспокоит?</h2>
+                <div class="block22">
+                    <div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="depression_apathy" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Депрессия, апатия</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="grief_loss_resentment" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Горе, утрата, обида</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="relationships_with_children" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Отношения с детьми</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="quarrels_conflicts" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Ссоры, конфликты</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="anxiety_restlessness" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Тревога, беспокойство</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="loss_income_work" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Потеря доходов, работы</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="complexes" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Комплексы</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="potential_abilities" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Потенциал, способности</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input  type="checkbox" value="bad_habits" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Вредные привычки</span>
+                            </label>
+                        </div>
+                        <div class="block_checkbox">
+                            <label>
+                                <input type="checkbox" value="childhood_trauma" class="real_checkbox">
+                                <span class="custom_checkbox"></span>
+                                <span class="custom_checkbox_text">Детские травмы</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block_bottom">
+                    <div>
+                        <p>Пройдено: <span>0%</span></p>
+                        <div class="container_skills"><div class="skills proc"></div></div>
+                    </div>
+                    <form>
+                        <p style="width: 70px;"></p>
+                        <button type="button" class="btn_left"><div class="arrow-1"><span></span></div></button>
+                        <button type="button" class="btn_right">Далее&nbsp;&nbsp;&#9658;</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="block hide_class" id="block3">
+                <h2>Расскажите о себе:</h2>
+                <form action="" class="obratnaya">
+                    <div class="block_form">
+                        <label for="name">
+                            <span>Имя или псевдоним *</span>
+                            <input type="text" placeholder="Ваше имя" name="name" required>
+                        </label>
+                    </div>
+                    <div class="form_phone_mail">
+                        <label for="tel">
+                            <span>Телефон *</span>
+                            <input type="tel" placeholder="+7 (999) 999 99 99" id="phone" name="tel" required>
+                        </label>
+                        <label for="email">
+                            <span>E-mail *</span>
+                            <input type="text" placeholder="example@gmail.com" name="email" required>
+                        </label>
+                    </div>
+                    <div class="form_description">
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" class="real_checkbox">
+                            <span class="custom_checkbox"></span>
+                            <span class="form_description_text">Я даю согласие на обработку моих персональных данных, а также <a href="#">с условиями и политикой</a> в отношении их обработки ознакомлен</span>
+                        </label>
+                    </div>
+                </form>
+
+                <div class="block_bottom">
+                    <div>
+                        <p>Пройдено: <span>0%</span></p>
+                        <div class="container_skills"><div class="skills proc"></div></div>
+                    </div>
+                    <form>
+                        <p></p>
+                        <button type="button" class="btn_left"><div class="arrow-1"><span></span></div></button>
+                        <button type="button" class="btn_right">Далее&nbsp;&nbsp;&#9658;</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="end_feedback_form hide_class" id="block4">
+                <div style="position: absolute; right: 59px;">
+                    <button class="cl-btn-1">
+                        <div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </div>
+                    </button>
+                </div>
+                <h2>Заявка принята!</h2>
+                <p>В ближайшее время с вами свяжется менеджер и проконсльтируюет по вашему вопросу</p>
+                <img src="./Group_4962.svg" alt="image">
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
